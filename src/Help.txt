@@ -1,0 +1,1 @@
+To run website, do npm run dev in terminal

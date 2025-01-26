@@ -1,10 +1,11 @@
 // App.tsx
 import "./App.css"; // Import global CSS
-import Moon from "./assets/moon";
 import Message from "./assets/Message";
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
     return (
+        <HelmetProvider>
         <div
             style={{
                 display: "flex",
@@ -17,8 +18,8 @@ function App() {
           <div style={{ flexGrow: 1, paddingRight: "100px"}}>
             <h1><Message /></h1> 
           </div>
-            <Moon style={{ flexShrink: 4}} />
         </div>
+        </HelmetProvider>
     );
 }
 

@@ -1,7 +1,7 @@
 // App.tsx
 import "./App.css"; // Import global CSS
 import Moon from "./assets/moon";
-import Message from "./Message";
+import Message from "./assets/Message";
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
             }}
         >
           <div style={{ flexGrow: 1, paddingRight: "100px"}}>
-              <Message />
+            <h1><Message /></h1> 
           </div>
             <Moon style={{ flexShrink: 4}} />
         </div>
